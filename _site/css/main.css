@@ -315,8 +315,11 @@ pre {
   padding-bottom: 40px;
   overflow: hidden; }
 
+.svg-overlay {
+  perspective: 500px; }
+
 .skill-box h4 {
-  font-size: 10px;
+  font-size: 11px;
   font-family: Noto;
   letter-spacing: 1px;
   color: #868585;
@@ -365,7 +368,7 @@ pre {
   margin-top: 20px;
   padding-bottom: 40px;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   opacity: 0;
   font-weight: 400;
   position: relative;
@@ -522,6 +525,7 @@ input[type='submit']:hover {
   overflow: hidden;
   margin: 0 auto;
   padding: 10px;
+  perspective: 500px;
   max-width: 600px;
   padding-top: 80px;
   padding-bottom: 40px; }
@@ -537,12 +541,17 @@ input[type='submit']:hover {
   -ms-transition: all 0.5s ease-in-out;
   -kthtml-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
-  .project-box.is-showing {
-    transform: translate(0px, 0px);
-    opacity: 1; }
+
+.odd-box.is-showing {
+  transform: rotateY(5deg);
+  opacity: 1; }
+
+.even-box.is-showing {
+  transform: rotateY(-5deg);
+  opacity: 1; }
 
 .project-bio {
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 30px;
   /* text-align: center; */
   color: #ccc;
@@ -768,7 +777,8 @@ html, body {
   transition: all 0.1s ease;
   margin: 0 auto;
   position: relative;
-  display: block; }
+  display: block;
+  transform: rotateX(10deg); }
 
 .svg-box {
   opacity: 0;
