@@ -632,6 +632,13 @@ input[type='submit']:hover{
 
     }
 }
+.no-box{
+    &.is-showing{
+            transform: translateY(0px);
+        opacity: 1;
+
+    }
+}
 .project-bio{
         font-size: 15px;
     margin-top: 30px;
