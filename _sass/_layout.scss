@@ -260,7 +260,7 @@ visibility: visible;
     -ms-transition: all 1.5s ease-in-out;
     -kthtml-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
-    height: 8px;
+    height: 2px;
     background-color: #2A48F3;
     
 
@@ -382,7 +382,7 @@ animation: mouan 8s ease-in-out infinite;
     -kthtml-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
      text-align: left;
-    padding: 20px;
+    padding: 12px;
     border: 3px solid #222;
 }.skill-box:hover {
     background-color: rgba(255,255,255,0.05);
@@ -394,8 +394,9 @@ animation: mouan 8s ease-in-out infinite;
     font-family: adam;
     margin-left: -70px;
     margin-top: 10px;
-    color: #fff;
-    font-weight: 700;
+        color: #fff;
+    border-bottom: 1px solid #fff;
+  
    
 }
 @media(max-width:768px){
@@ -643,7 +644,7 @@ input[type='submit']:hover{
         font-size: 15px;
     margin-top: 30px;
     /* text-align: center; */
-    color: #ccc;    letter-spacing: 1px;
+    color: #eee;    letter-spacing: 1px;
 }
 .tech {
     display: inline-block;
@@ -807,7 +808,7 @@ html,body{
     margin: 0 auto;
     margin-top: 10px;
     padding-top: 10px;
-    border-top: 3px solid #ddd;
+    border-top: 1px solid #ddd;
     text-align: center;
 letter-spacing: 1.1px;
     color: #fff;
@@ -888,7 +889,7 @@ animation: eyesan 5s ease infinite;
     transition:all 0.1s ease;
     margin: 0 auto;
     position: relative;
-    display: block;   
+    display: block;  
 }
 
 .svg-box{

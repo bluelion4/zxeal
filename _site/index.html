@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Latest compiled and minified CSS -->
 
-<link rel="shortcut icon" href="/img/favicon.ico"/>
+<link rel="shortcut icon" href="/zxeal/img/favicon.ico"/>
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
@@ -80,6 +80,12 @@ function closeNav() {
   <script type="text/javascript">
 $( window ).load(function() {
         $('#loader').fadeOut('slow');
+            setTimeout(function(){
+$('.svg-box').addClass('is-showing');
+$('.svg-z').addClass('is-showing');
+$('.svg-x').addClass('is-showing');
+$('.tag').addClass('is-showing');
+}, 200);
     });
 
  $(document).ready(function() {
@@ -96,16 +102,7 @@ var sqflag=true;
 var fourflag=true;
 var snflag=true;
 
-  $(function() {
-    setTimeout(function(){
-$('.svg-box').addClass('is-showing');
-$('.svg-z').addClass('is-showing');
-$('.svg-x').addClass('is-showing');
-$('.tag').addClass('is-showing');
-}, 200);
 
-  
-});
 
     $(window).scroll(function() {
        var wScroll = $(this).scrollTop();
@@ -393,7 +390,7 @@ DREAM / DESIGN / CODE</span>
 <div class="container">
   <div class="row"><div class="work-main col-sm-12"><div class="work-div">
 <div class="work-title hi">HI</div>
-  I'm Aniket Suvarna, a web developer based in Mumbai, India. I am really passionate about what I do and what I believe in. I like to collaborate with people who share my passion and drive towards buliding something unique. I specialise in designing the backend. Building a smooth UI/UX is also one of my strong points. I love learning and adapting to new technologies and frameworks. Flask and Wordpress are two technologies I am comfortable with, and adding more technologies to this list serves as my daily motivation.</div></div>
+  I'm Aniket Suvarna, a web developer based in Mumbai, India. I am really passionate about what I do and what I believe in. I like to collaborate with people who share my passion and drive towards building something unique. I specialise in designing the backend. Building a smooth UI/UX is also one of my strong points. I love learning and adapting to new technologies and frameworks. Flask and Wordpress are two technologies I am most comfortable with, and adding more technologies to this list serves as my daily motivation.</div></div>
 </div>
 </div>
   
@@ -765,7 +762,7 @@ viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="pres
 <div class="project-but">
 <div class="project-but-in">  </div>
 <div class="project-a"> 
-  <a target="blank" href="http://sporquo.com"><i class="glyphicon glyphicon-globe"></i> View Website</a> </div>
+  <a target="blank" href="http://sporquo.com/football/blog"><i class="glyphicon glyphicon-globe"></i> View Website</a> </div>
 
 </div>
   </div>
@@ -827,7 +824,7 @@ viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="pres
 <div class="container">
   <div class="row">
  <div class="project-cont text-right">
-  <div class="col-xs-12 project-box even-box">
+  <div class="col-xs-12 project-box no-box">
   <h3>Your Project</h3>
   <div class="project-bio">I would really love to hear your ideas for the new project.</div>
 <form action="https://formspree.io/aniketsuvarna30191@gmail.com"
