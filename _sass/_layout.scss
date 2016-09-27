@@ -32,21 +32,204 @@
    
     100%{    transform: translateY(5px);}
  }
+.services-back{
+    background-color: #2A48F3;
+}
+.st2{fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:2;visibility: hidden;}
+.st0{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+    .st1{opacity:0.2;}
 
+#loader{
+        background: #111;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+.loader-svg {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+.loader-svg h5{
+    color: #555;
+    margin-left: -30px;
+    font-family: adam;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+
+@-webkit-keyframes barfour {
+       0%{   transform: translateX(-139px);width:10px;}
+  10%{     transform: translateX(-103px);width:10px;}
+    30%{ transform: translateX(-69px);width:10px;}
+    50%{     transform: translateX(-32px);width:10px;}
+    70%,96%{ transform: translateX(0px);width:22px;}
+    100%{     transform: translateX(-139px);width:10px;}
+}
+@-moz-keyframes barfour {
+        0%{   transform: translateX(-139px);width:10px;}
+  10%{     transform: translateX(-103px);width:10px;}
+    30%{ transform: translateX(-69px);width:10px;}
+    50%{     transform: translateX(-32px);width:10px;}
+    70%,96%{ transform: translateX(0px);width:22px;}
+    100%{     transform: translateX(-139px);width:10px;}
+}
+@keyframes barfour { 
+   0%{   transform: translateX(-139px);width:10px;}
+  10%{     transform: translateX(-103px);width:10px;}
+    30%{ transform: translateX(-69px);width:10px;}
+    50%{     transform: translateX(-32px);width:10px;}
+    70%,96%{ transform: translateX(0px);width:22px;}
+    100%{     transform: translateX(-139px);width:10px;}
+ }
+
+@-webkit-keyframes barthree {
+     0%{   transform: translateX(-107px);width:10px;}
+  10%{ transform: translateX(-72px);width:10px;}
+    30%{ transform: translateX(-36px);width:10px;}
+    50%,94%{ transform: translateX(0px);width:22px;}
+    100%{ transform: translateX(-107px);width:10px;}
+}
+@-moz-keyframes barthree {
+      0%{   transform: translateX(-107px);width:10px;}
+  10%{ transform: translateX(-72px);width:10px;}
+    30%{ transform: translateX(-36px);width:10px;}
+    50%,94%{ transform: translateX(0px);width:22px;}
+    100%{ transform: translateX(-107px);width:10px;}
+}
+@keyframes barthree { 
+    0%{   transform: translateX(-107px);width:10px;}
+  10%{ transform: translateX(-72px);width:10px;}
+    30%{ transform: translateX(-36px);width:10px;}
+    50%,94%{ transform: translateX(0px);width:22px;}
+    100%{ transform: translateX(-107px);width:10px;}
+ }
+
+
+@-webkit-keyframes bartwo {
+     0%{   transform: translateX(-72px);width:10px;}
+  10%{ transform: translateX(-34px);width:10px;}
+    30%,92%{ transform: translateX(0px);width:22px;}
+    100%{ transform: translateX(-72px);width:10px;}
+}
+@-moz-keyframes bartwo {
+          0%{   transform: translateX(-72px);width:10px;}
+  10%{ transform: translateX(-34px);width:10px;}
+    30%,92%{ transform: translateX(0px);width:22px;}
+    100%{ transform: translateX(-72px);width:10px;}
+}
+@keyframes bartwo { 
+       0%{   transform: translateX(-72px);width:10px;}
+  10%{ transform: translateX(-34px);width:10px;}
+    30%,92%{ transform: translateX(0px);width:22px;}
+    100%{ transform: translateX(-72px);width:10px;}
+ }
+
+
+@-webkit-keyframes barone {
+     0%{   transform: translateX(-34px);width:10px;}
+  
+    10%,90%{ transform: translateX(0px);width:22px;}
+    100%{ transform: translateX(-34px);width:10px;}
+}
+@-moz-keyframes barone {
+        0%{   transform: translateX(-34px);width:10px;}
+  
+    10%,90%{ transform: translateX(0px);width:22px;}
+    100%{ transform: translateX(-34px);width:10px;}
+}
+@keyframes barone { 
+    0%{   transform: translateX(-34px);width:10px;}
+  
+    10%,90%{ transform: translateX(0px);width:22px;}
+    100%{ transform: translateX(-34px);width:10px;}
+ }
+.bar4{
+        transform: translateX(-139px);
+    width: 10px;
+        -webkit-animation: barfour 2s ease infinite;
+-moz-animation: barfour 2s ease infinite;
+animation: barfour 2s ease infinite;
+}
+
+.bar3{
+        transform: translateX(-107px);
+    width: 10px;
+        -webkit-animation: barthree 2s ease infinite;
+-moz-animation: barthree 2s ease infinite;
+animation: barthree 2s ease infinite;
+}
+
+.bar2{
+        transform: translateX(-72px);
+    width: 10px;
+        -webkit-animation: bartwo 2s ease infinite;
+-moz-animation: bartwo 2s ease infinite;
+animation: bartwo 2s ease infinite;
+}
+
+.bar1{
+        transform: translateX(-34px);
+    width: 10px;
+        -webkit-animation: barone 2s ease infinite;
+-moz-animation: barone 2s ease infinite;
+animation: barone 2s ease infinite;
+}
+
+
+
+
+
+
+
+
+.loader-svg svg{height: 50px;
+    position: relative;
+    left: -50%;}
+    .stw{
+    stroke-dasharray:4000;
+    stroke-dashoffset:0;
+visibility: visible;
+    -webkit-animation: dash 15s linear forwards;
+    -o-animation: dash 15s linear forwards;
+    -moz-animation: dash 15s linear forwards;
+    animation: dash 15s linear forwards;
+
+}
+@-webkit-keyframes dash {
+     from{  stroke-dashoffset:4000;}
+  
+     to{  stroke-dashoffset:0;opacity: 1;}
+}
+@-moz-keyframes dash {
+     from{  stroke-dashoffset:4000;}
+  
+     to{  stroke-dashoffset:0;opacity: 1;}
+}
+@keyframes dash { 
+    from{  stroke-dashoffset:4000;}
+  
+     to{  stroke-dashoffset:0;opacity: 1;}
+ }
 @-webkit-keyframes eyesan {
-     0%,95%{height:6px;    transform: translate(0,0px);}
-   
-    100%{height:1px;transform: translate(0,3px);}
+     0%,80%,95%{  transform: translate(0,0px);}
+  
+    90%,100%{transform: translate(0,-6px);}
 }
 @-moz-keyframes eyesan {
-   0%,95%{height:6px;    transform: translate(0,0px);}
-   
-    100%{height:1px;transform: translate(0,3px);}
+   0%,80%,95%{  transform: translate(0,0px);}
+  
+    90%,100%{transform: translate(0,-6px);}
 }
 @keyframes eyesan { 
-  0%,95%{height:6px;    transform: translate(0,0px);}
-   
-    100%{height:1px;transform: translate(0,3px);}
+  0%,80%,95%{  transform: translate(0,0px);}
+  
+    90%,100%{transform: translate(0,-6px);}
  }
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 51%}
@@ -65,7 +248,7 @@
  }
  .exp-back {
        position: relative;
-    max-width: 300px;
+  
     margin-top: 10px;
     margin: 0 auto;
         background-color: #111;
@@ -77,7 +260,7 @@
     -ms-transition: all 1.5s ease-in-out;
     -kthtml-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
-    height: 3px;
+    height: 8px;
     background-color: #2A48F3;
      box-shadow: 1px 2px 0px #13237d;
 
@@ -103,6 +286,48 @@
 animation: AnimationName 31s ease infinite;
 
 background-position: center center; 
+}
+.service-cont{
+            max-width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
+    overflow: hidden;
+    padding-bottom: 40px;
+
+}
+.service-cont svg{
+    width: 100%!important;
+    height: auto!important;
+}
+.service-box {
+    width: 33.33333333%;
+    display: inline-block;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media(max-width: 380px){
+
+    .service-box {
+    width: 100%;
+    padding-top: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+padding-bottom: 15px;
+}.service-box:last-child {
+        border-bottom: 0px solid;
+    }
+}
+.service-cont h3{
+        color: #fff;
+    font-size: 15px;text-align: left;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.service-cont p{
+        color: #ddd;
 }
 #bubb{
     position: absolute;
@@ -130,7 +355,7 @@ animation: mouan 8s ease-in-out infinite;
 .work-back{
    
     background-color: #2a48f3;
-perspective:500px;
+
   z-index: 100;
   overflow: hidden;
 }
@@ -146,7 +371,7 @@ perspective:500px;
       font-size: 11px;
     font-family: Noto;
     letter-spacing: 1px;
-    color: #868585;
+    color: #aaa;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
@@ -207,10 +432,15 @@ max-width: 600px;
 
     
     &.is-showing{
-        transform: rotate(-2deg) translate(0px,0px);
+        transform: translate(0px,0px);
         opacity: 1;
        
 
+    }
+}
+@media(max-width: 468px){
+    .skill-box{
+        width: 100%!important;
     }
 }
 .sporquo-cont{
@@ -622,6 +852,26 @@ height: 530px;
 -webkit-animation: AnimationName 31s ease infinite;
 -moz-animation: AnimationName 31s ease infinite;
 animation: AnimationName 31s ease infinite;
+}
+.skill-row{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.down-side{
+        margin: 0 auto;
+    position: absolute;
+    left: 0;cursor: pointer;
+    right: 0;opacity: 0.5;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin-top: 60px;
+        -webkit-animation: eyesan 5s ease infinite;
+-moz-animation: eyesan 5s ease infinite;
+animation: eyesan 5s ease infinite;
+}
+.down-side:hover{
+    opacity: 0.8;
 }
 .svg-logo{
      -webkit-transition:all 0.1s ease;
