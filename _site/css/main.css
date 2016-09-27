@@ -265,7 +265,8 @@ pre {
   -kthtml-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
   height: 3px;
-  background-color: #2A48F3; }
+  background-color: #2A48F3;
+  box-shadow: 1px 2px 0px #13237d; }
 
 .site-header {
   min-height: 56px;
@@ -305,6 +306,7 @@ pre {
 
 .work-back {
   background-color: #2a48f3;
+  perspective: 500px;
   z-index: 100;
   overflow: hidden; }
 
@@ -314,9 +316,6 @@ pre {
   padding-top: 20px;
   padding-bottom: 40px;
   overflow: hidden; }
-
-.svg-overlay {
-  perspective: 500px; }
 
 .skill-box h4 {
   font-size: 11px;
@@ -375,7 +374,7 @@ pre {
   transform: translate(0px, 300px);
   transition: all 0.5s ease; }
   .work-main.is-showing {
-    transform: translate(0px, 0px);
+    transform: rotate(-2deg) translate(0px, 0px);
     opacity: 1; }
 
 .sporquo-cont {
@@ -777,8 +776,7 @@ html, body {
   transition: all 0.1s ease;
   margin: 0 auto;
   position: relative;
-  display: block;
-  transform: rotateX(10deg); }
+  display: block; }
 
 .svg-box {
   opacity: 0;
