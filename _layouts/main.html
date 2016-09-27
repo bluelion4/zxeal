@@ -59,6 +59,12 @@ function closeNav() {
   <script type="text/javascript">
 $( window ).load(function() {
         $('#loader').fadeOut('slow');
+            setTimeout(function(){
+$('.svg-box').addClass('is-showing');
+$('.svg-z').addClass('is-showing');
+$('.svg-x').addClass('is-showing');
+$('.tag').addClass('is-showing');
+}, 200);
     });
 
  $(document).ready(function() {
@@ -75,16 +81,7 @@ var sqflag=true;
 var fourflag=true;
 var snflag=true;
 
-  $(function() {
-    setTimeout(function(){
-$('.svg-box').addClass('is-showing');
-$('.svg-z').addClass('is-showing');
-$('.svg-x').addClass('is-showing');
-$('.tag').addClass('is-showing');
-}, 200);
 
-  
-});
 
     $(window).scroll(function() {
        var wScroll = $(this).scrollTop();
