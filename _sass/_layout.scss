@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: adam;
-    src: url('/zxeal/fonts/Teko-Light.ttf');
+    src: url('/fonts/Teko-Light.ttf');
 }
 @keyframes popout {
     0%,85%{transform:scale(0);opacity:0}
@@ -275,7 +275,7 @@ visibility: visible;
     position: relative;
 }
 .centererback{
-    background-image: url('/zxeal/img/back.jpg');
+    background-image: url('/img/back.jpg');
     background-size: cover;
     background-attachment: fixed;
     height: 530px;
@@ -446,7 +446,7 @@ max-width: 600px;
     }
 }
 .sporquo-cont{
-    background: url('/zxeal/img/sporquo.jpg') fixed no-repeat;
+    background: url('/img/sporquo.jpg') fixed no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -467,7 +467,7 @@ max-width: 600px;
    
 }
 .fourmost-cont{
-    background: url('/zxeal/img/fourmost.jpg') fixed no-repeat;
+    background: url('/img/fourmost.jpg') fixed no-repeat;
     background-size: cover; position: absolute;
     top: 0;
     left: 0;
@@ -487,7 +487,7 @@ max-width: 600px;
 }
 
 .studentnation-cont{
-    background: url('/zxeal/img/studentnation.jpg') fixed no-repeat;
+    background: url('/img/studentnation.jpg') fixed no-repeat;
     background-size: cover; position: absolute;
     top: 0;
     left: 0;
@@ -827,7 +827,7 @@ letter-spacing: 1.1px;
    
 }
 .above-back{
-    background-image: url('/zxeal/img/above-back.png');
+    background-image: url('/img/above-back.png');
    -webkit-animation: AnimationName 100s ease infinite;
 -moz-animation: AnimationName 100s ease infinite;
 animation: AnimationName 100s ease infinite;
@@ -840,7 +840,7 @@ animation: AnimationName 100s ease infinite;
  top:290px;
 }
 .above-back-b{
-    background-image: url('/zxeal/img/above-back-b.png');
+    background-image: url('/img/above-back-b.png');
    -webkit-animation: AnimationName 100s ease infinite;
 -moz-animation: AnimationName 100s ease infinite;
 animation: AnimationName 100s ease infinite;
