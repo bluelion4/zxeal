@@ -1,0 +1,14 @@
+ <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="196.557px" height="179.428px" viewBox="0 0 196.557 179.428" enable-background="new 0 0 196.557 179.428"
+   xml:space="preserve">
+<polygon fill="#738DF9" class="bar4" points="161.933,44.423 139.09,83.232 139.09,36.04 161.933,36.04 "/>
+<polygon fill="#5171F4" class="bar3" points="129.495,94.456 106.652,131.006 106.652,36.954 129.495,36.954 "/>
+<rect x="71.928" y="36.954" class="bar2" fill="#3A5DEF" width="22.844" height="101.362"/>
+<rect x="36.429" y="36.954" class="bar1" fill="#2A48F3" width="22.844" height="101.362"/>
+
+
+
+<g>
+  <path fill="#FFFFFF" d="M123.19,179.428H0V0h196.557v66.331L123.19,179.428z M20,159.428h92.325l64.232-99.016V20H20V159.428z"/>
+</g>
+</svg>
