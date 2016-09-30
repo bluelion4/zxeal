@@ -8,7 +8,7 @@
 # Site settings
 title: Zxeal -  Web Design
 email: aniketsuvarna30191@gmail.com
-description: This is a portfolio of Aniket Suvarna, Web Developer based in Mumbai, India
+description: "This is a portfolio of Aniket Suvarna, Web Developer based in Mumbai, India"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://zxeal.com" # the base hostname & protocol for your site
 twitter_username: iamaniket
