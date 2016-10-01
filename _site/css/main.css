@@ -499,27 +499,58 @@ pre {
     transform: translate(0, -6px); } }
 @-webkit-keyframes AnimationName {
   0% {
-    background-position: 0% 51%; }
-  50% {
-    background-position: 100% 100%; }
+    background-position: 0% 100%; }
   100% {
-    background-position: 0% 51%; } }
+    background-position: 100% 100%; } }
 @-moz-keyframes AnimationName {
   0% {
-    background-position: 0% 51%; }
-  50% {
-    background-position: 100% 100%; }
+    background-position: 0% 100%; }
   100% {
-    background-position: 0% 51%; } }
+    background-position: 100% 100%; } }
 @keyframes AnimationName {
   0% {
-    background-position: 0% 51%; }
-  50% {
-    background-position: 100% 100%; }
+    background-position: 0% 100%; }
   100% {
-    background-position: 0% 51%; } }
+    background-position: 100% 100%; } }
+@-webkit-keyframes browsc {
+  0%,95% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(4px); } }
+@-moz-keyframes browsc {
+  0%,95% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(4px); } }
+@keyframes browsc {
+  0%,95% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(4px); } }
+@-webkit-keyframes eyesc {
+  0%,95% {
+    height: 5px;
+    transform: translateY(0px); }
+  100% {
+    height: 1px;
+    transform: translateY(3px); } }
+@-moz-keyframes eyesc {
+  0%,95% {
+    height: 5px;
+    transform: translateY(0px); }
+  100% {
+    height: 1px;
+    transform: translateY(3px); } }
+@keyframes eyesc {
+  0%,95% {
+    height: 5px;
+    transform: translateY(0px); }
+  100% {
+    height: 1px;
+    transform: translateY(3px); } }
 .exp-back {
   position: relative;
+  height: 15px;
   margin-top: 10px;
   margin: 0 auto;
   background-color: #111; }
@@ -531,7 +562,7 @@ pre {
   -ms-transition: all 1.5s ease-in-out;
   -kthtml-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
-  height: 2px;
+  height: 12px;
   background-color: #2A48F3; }
 
 .site-header {
@@ -542,12 +573,9 @@ pre {
   background-image: url("/img/back.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 530px;
+  height: 100vh;
   overflow: hidden;
   position: relative;
-  -webkit-animation: AnimationName 31s ease infinite;
-  -moz-animation: AnimationName 31s ease infinite;
-  animation: AnimationName 31s ease infinite;
   background-position: center center; }
 
 .service-cont {
@@ -600,10 +628,15 @@ pre {
   animation: popout 1.5s ease  forwards;
   -webkit-animation: popout 1.5s ease  forwards; }
 
+.brow {
+  -webkit-animation: browsc 5s ease-in-out infinite;
+  -moz-animation: browsc 5s ease-in-out infinite;
+  animation: browsc 5s ease-in-out infinite; }
+
 .eyes {
-  -webkit-animation: eyesan 5s ease-in-out infinite;
-  -moz-animation: eyesan 5s ease-in-out infinite;
-  animation: eyesan 5s ease-in-out infinite; }
+  -webkit-animation: eyesc 5s ease-in-out infinite;
+  -moz-animation: eyesc 5s ease-in-out infinite;
+  animation: eyesc 5s ease-in-out infinite; }
 
 .mouth {
   -webkit-animation: mouan 8s ease-in-out infinite;
@@ -612,6 +645,8 @@ pre {
 
 .work-back {
   background-color: #2a48f3;
+  min-height: 100vh;
+  padding-top: 80px;
   z-index: 100;
   overflow: hidden; }
 
@@ -622,12 +657,14 @@ pre {
   padding-bottom: 50px;
   overflow: hidden; }
 
+.a-body {
+  text-align: center; }
+
 .skill-box h4 {
-  font-size: 11px;
+  font-size: 13px;
   font-family: Noto;
   letter-spacing: 1px;
   color: #aaa;
-  text-transform: uppercase;
   margin-bottom: 15px; }
 
 .skill-box {
@@ -673,7 +710,7 @@ pre {
   margin-top: 20px;
   padding-bottom: 40px;
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   opacity: 0;
   font-weight: 400;
   position: relative;
@@ -750,9 +787,6 @@ pre {
   right: 40px;
   padding: 5px !important;
   margin-left: 10px; }
-
-.site-nav {
-  display: none; }
 
 #contact {
   background-color: #2a48f3;
@@ -849,18 +883,9 @@ input[type='submit']:hover {
   -ms-transition: all 0.5s ease-in-out;
   -kthtml-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
-
-.odd-box.is-showing {
-  transform: rotateY(5deg);
-  opacity: 1; }
-
-.even-box.is-showing {
-  transform: rotateY(-5deg);
-  opacity: 1; }
-
-.no-box.is-showing {
-  transform: translateY(0px);
-  opacity: 1; }
+  .project-box.is-showing {
+    transform: translateY(0px);
+    opacity: 1; }
 
 .project-bio {
   font-size: 15px;
@@ -1058,7 +1083,7 @@ html, body {
   background-position: right bottom;
   position: absolute;
   right: 0;
-  top: 290px; }
+  bottom: 0; }
 
 .above-back-b {
   background-image: url("/img/above-back-b.png");
@@ -1071,13 +1096,33 @@ html, body {
   background-position: right bottom;
   position: absolute;
   left: 0;
-  top: 280px; }
+  bottom: 0; }
+
+.percent font {
+  color: #555;
+  font-size: 20px;
+  margin-left: 3px; }
+
+.percent {
+  color: #888;
+  font-family: adam;
+  font-size: 23px;
+  line-height: 10px;
+  float: left;
+  width: 40px;
+  margin-top: 30px; }
+
+.p-left {
+  margin-left: 40px; }
+
+.a-back {
+  transform: rotate(-10deg); }
 
 .centerer {
-  background: linear-gradient(85deg, #111, #000, #050505);
+  background: linear-gradient(85deg, #222, #111, #333);
   background-size: 600% 600%;
-  opacity: 0.70;
-  height: 530px;
+  opacity: 0.5;
+  height: 100vh;
   -webkit-animation: AnimationName 31s ease infinite;
   -moz-animation: AnimationName 31s ease infinite;
   animation: AnimationName 31s ease infinite; }
@@ -1096,7 +1141,7 @@ html, body {
   margin-left: 0;
   margin-right: 0;
   text-align: center;
-  margin-top: 60px;
+  bottom: 0;
   -webkit-animation: eyesan 5s ease infinite;
   -moz-animation: eyesan 5s ease infinite;
   animation: eyesan 5s ease infinite; }
