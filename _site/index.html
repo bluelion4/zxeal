@@ -35,9 +35,9 @@
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     width="196.557px" height="269.214px" viewBox="0 -89.786 196.557 269.214" enable-background="new 0 -89.786 196.557 269.214"
    xml:space="preserve">
-<polygon fill="#738DF9" class="bar4" points="161.933,45.423 139.09,84.232 139.09,37.04 161.933,37.04 "/>
-<polygon fill="#5171F4" class="bar3" points="129.495,94.456 106.652,131.006 106.652,36.954 129.495,36.954 "/>
-<rect x="71.928" y="36.954" class="bar2" fill="#3A5DEF" width="22.844" height="101.362"/>
+<polygon fill="#3DDC97" class="bar4" points="161.933,45.423 139.09,84.232 139.09,37.04 161.933,37.04 "/>
+<polygon fill="#FF495C" class="bar3" points="129.495,94.456 106.652,131.006 106.652,36.954 129.495,36.954 "/>
+<rect x="71.928" y="36.954" class="bar2" fill="#46237A" width="22.844" height="101.362"/>
 <rect x="36.429" y="36.954" class="bar1" fill="#2A48F3" width="22.844" height="101.362"/>
 
 <g>
@@ -69,10 +69,10 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#about">About</a>
-  <a href="#sporquo">Work</a>
-<a href="#services">Services</a>
-  <a href="#contact">Contact</a>
+  <a href="#" class="side-a">About</a>
+  <a href="#" class="side-w">Work</a>
+<a href="#" class="side-s">Services</a>
+  <a href="#" class="side-c">Contact</a>
    <a target="_blank" href="http://facebook.com/zxealwd" class="fb-side"><img src="/img/fb.png" /></a>
     <a target="_blank" href="http://twitter.com/zxealwd" class="tw-side"><img src="/img/tw.png" /></a>
 </div>
@@ -85,17 +85,23 @@
 
 <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script><script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "120px";
-    document.getElementById("main").style.marginRight = "120px";
-     $('.closebtn').show();
-    $('.openn').hide();
+    $('#mySidenav').fadeIn(200);
+  
+    $(".openn").addClass("cross");
+    $(".openn").attr("onclick","closeNav()");
+ $('#mySidenav a').each(function(i) {
+    var $li = $(this);
+    setTimeout(function() {
+      $li.addClass('is-showing');
+    }, i*50); // delay 100 ms
+  });
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginRight= "0";
-   $('.closebtn').hide();
-      $('.openn').show();
+    $('#mySidenav').hide();
+$(".openn").removeClass("cross");
+   $(".openn").attr("onclick","openNav()");
+   $(".sidenav a").removeClass('is-showing');
 }
 </script>
   <script type="text/javascript">
@@ -110,6 +116,36 @@ $('.tag').addClass('is-showing');
     });
 
  $(document).ready(function() {
+$('.side-a').click(function(e){
+e.preventDefault();
+closeNav();
+   $('html,body').animate({
+        scrollTop: $("#about").offset().top},
+        'slow');
+});
+
+$('.side-w').click(function(e){
+e.preventDefault();
+closeNav();
+   $('html,body').animate({
+        scrollTop: $("#sporquo").offset().top},
+        'slow');
+});
+$('.side-s').click(function(e){
+e.preventDefault();
+closeNav();
+   $('html,body').animate({
+        scrollTop: $("#services").offset().top},
+        'slow');
+});
+$('.side-c').click(function(e){
+e.preventDefault();
+closeNav();
+   $('html,body').animate({
+        scrollTop: $("#contact").offset().top},
+        'slow');
+});
+
 
 $('.down-side').click(function(){
    $('html,body').animate({
@@ -177,6 +213,24 @@ $('.svg-x').addClass('is-showing');
        skillflag=true;
         
  }
+
+sbottom = services.top + $('#services').height();
+
+if((wScroll>=(services.top)) && (wScroll<=(sbottom))){
+  $('.svg-box').attr('stroke','#222');
+   $('.svg-z').attr('fill','#222');
+    $('.svg-x').attr('fill','#222');
+    $('.barr').css('background-color','#222');
+}
+else{
+   $('.svg-box').attr('stroke','#fff');
+   $('.svg-z').attr('fill','#fff');
+    $('.svg-x').attr('fill','#fff');
+ $('.barr').css('background-color','#fff');
+}
+
+
+
 var htmlpos = $( "#html5" ).position();
 if(wScroll>(htmlpos.top-500)){
 $('.html5').css( 'width','90%' ); 
@@ -188,7 +242,7 @@ if (flag){
         div.text(number);
         if (number >= target) clearInterval(interval);
         number++;
-    }, 8);
+    }, 12);
  flag=false;
 }
 
@@ -211,7 +265,7 @@ if (flaga){
         diva.text(numbera);
         if (numbera >= targeta) clearInterval(intervala);
         numbera++;
-    }, 8);
+    }, 12);
   flaga=false;
 }
 }
@@ -231,7 +285,7 @@ if (flagb){
         divb.text(numberb);
         if (numberb >= targetb) clearInterval(intervalb);
         numberb++;
-    }, 8);
+    }, 12);
   flagb=false;
 }
 
@@ -252,7 +306,7 @@ if (flagc){
         divc.text(numberc);
         if (numberc >= targetc) clearInterval(intervalc);
         numberc++;
-    }, 8);
+    }, 12);
  flagc=false;
 }
 
@@ -274,7 +328,7 @@ if (flagd){
         divd.text(numberd);
         if (numberd >= targetd) clearInterval(intervald);
         numberd++;
-    }, 8);
+    }, 12);
  flagd=false;
 }
 
@@ -294,7 +348,7 @@ if (flage){
         dive.text(numbere);
         if (numbere >= targete) clearInterval(intervale);
         numbere++;
-    }, 8);
+    }, 12);
 flage=false;
 }
 }
@@ -315,7 +369,7 @@ if (flagf){
         divf.text(numberf);
         if (numberf >= targetf) clearInterval(intervalf);
         numberf++;
-    }, 8);
+    }, 12);
 flagf=false;
 }
 }
@@ -335,7 +389,7 @@ if (flagg){
         divg.text(numberg);
         if (numberg >= targetg) clearInterval(intervalg);
         numberg++;
-    }, 8);
+    }, 12);
 flagg=false;
 }
 
@@ -356,7 +410,7 @@ if (flagh){
         divh.text(numberh);
         if (numberh >= targeth) clearInterval(intervalh);
         numberh++;
-    }, 8);
+    }, 12);
 flagh=false;
 }
 
@@ -431,38 +485,14 @@ if(wScroll>(contact.top-200)){
 
 }
 
-if(wScroll>(sporquo.top+50)&&wScroll<(sporquo.top+100)){
-
-  if(sqflag){
- $('html,body').animate({
-        scrollTop: $(".fourmost-cont").offset().top},
-        'fast');
- sqflag=false;
-}
-}
 
 
 
-if(wScroll>(fourmost.top+50)&&wScroll<(fourmost.top+100)){
- if(fourflag){
-
- $('html,body').animate({
-        scrollTop: $(".studentnation-cont").offset().top},
-        'fast');
- fourflag=false;
-}
-}
 
 
-if(wScroll>(studentnation.top+50)&&wScroll<(studentnation.top+100)){
 
-  if(snflag){
- $('html,body').animate({
-        scrollTop: $("#contact").offset().top},
-        'fast');
- snflag=false;
-}
-}
+
+
 
 
 
@@ -484,7 +514,12 @@ if(wScroll>(studentnation.top+50)&&wScroll<(studentnation.top+100)){
   <div id="top">
 
 
-  <span style="cursor:pointer" class="openn" onclick="openNav()">&#9776;</span>
+  <div style="cursor:pointer" class="openn" onclick="openNav()">
+    <div class="barr-c">
+    <div class="barr barra"></div>
+<div class="barr barrb"></div>
+<div class="barr barrc"></div></div>
+  </div>
   <div class=" index-home">
 
 
@@ -522,13 +557,7 @@ DREAM / DESIGN / CODE</span>
     <nav class="site-nav ">
 
 
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
+    
 
      
     </nav>
@@ -548,7 +577,7 @@ DREAM / DESIGN / CODE</span>
 <div class="a-body">
  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
-<rect fill="#F3F22A" class="a-back" width="150" height="150"/>
+<rect fill="#F1C40F" class="a-back" width="150" height="150"/>
 <rect x="87" y="41" fill="#589FC7" width="8" height="3"/>
 <rect x="79" y="44" fill="#589FC7" width="8" height="3"/>
 <polygon fill="#A5473D" points="102.5,62.511 101.5,62.511 101.5,24.511 43.5,24.511 43.5,90.512 48.5,90.512 48.5,94.512 
