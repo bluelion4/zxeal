@@ -272,7 +272,7 @@ pre {
   position: relative; }
 
 .centererback {
-  background-image: url("/img/back.jpg");
+  background-image: url("../img/back.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 530px;
@@ -376,7 +376,7 @@ pre {
     opacity: 1; }
 
 .sporquo-cont {
-  background: url("/img/sporquo.jpg") fixed no-repeat;
+  background: url("../img/sporquo.jpg") fixed no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -739,7 +739,7 @@ html, body {
   top: 290px; }
 
 .above-back-b {
-  background-image: url("/img/above-back-b.png");
+  background-image: url("../img/above-back-b.png");
   -webkit-animation: AnimationName 100s ease infinite;
   -moz-animation: AnimationName 100s ease infinite;
   animation: AnimationName 100s ease infinite;
